@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student form</title>
+    <link rel='stylesheet' type='text/css' href='index.css' />
+    <script type='text/javascript' src='index.js'></script>
+  </head>
+  <body>
+    <div class='column'>
+      <h1>Student form</h1>
+      <form action='index.html' method='post'>
+        <div class='form-group'>
+          <label>Name: </label>
+          <input name='name' class='student-name' />
+        </div>
+        <div class='form-group'>
+          <label>Age: </label>
+          <select name='age' class='student-age'>
+            <option>Select age</option>
+          </select>
+        </div>
+        <div class='form-group'>
+          <label>At university:</label>
+          <input name='at_university' type='checkbox' class='student-at-university'>
+        </div>
+        <div class='form-group'>
+          <label>Course 1:</label>
+          <input name='courses[]' class='student-course'>
+          <a href='#' class='remove-course'>Remove course</a>
+        </div>
+        <div class='form-group'>
+          <label>Course 2:</label>
+          <input name='courses[]' class='student-course'>
+          <a href='#' class='remove-course'>Remove course</a>
+        </div>
+        <div class='form-group'>
+          <a href='#' class='add-course'>Add Course</a>
+        </div>
+        <div class='form-group'>
+          <input type='submit' value='Save'>
+        </div>
+      </form>
+    </div>
+    <div class='column right-column'>
+      <h1>Student data</h1>
+      <div class='student-data'>
+        <label>Name: </label>
+        <span class='student-name'></span>
+      </div>
+      <div class='student-data'>
+        <label>Age: </label>
+        <span class='student-age'></span>
+      </div>
+      <div class='student-data'>
+        <label>At university: </label>
+        <span class='student-at-university'></span>
+      </div>
+      <div class='student-data'>
+        <label>Courses: </label>
+        <span class='student-courses'></span>
+      </div>
+      <div class='student-data'>
+        <a href='#' class='edit-student'>Edit</a>
+      </div>
+    </div>
+  </body>
+</html>
